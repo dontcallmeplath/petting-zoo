@@ -3,12 +3,13 @@ from datetime import date
 
 class Shark:
     """Class representing an animal"""
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
-bruce = Shark("Bruce", "Lemon shark")
-print(bruce)
+        self.shift = shift
+bruce = Shark("Bruce", "Lemon shark", "morning")
+print(f'{bruce.name} the {bruce.species} is available to pet during the {bruce.shift} shift.')
