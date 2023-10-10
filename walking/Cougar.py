@@ -13,10 +13,14 @@ class Cougar:
         self.shift = shift
         self.food = food
 
+    def __str__(self):
+        return f"{self.name} is a/n {self.species}"    
+
     def feed(self):
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
 madam_milf = Cougar("Madam","North American cougar", "midday", "venison")
+print(madam_milf)
 print(f'{madam_milf.name} the {madam_milf.species} is available to pet during the {madam_milf.shift} shift.')
 print(madam_milf.feed())

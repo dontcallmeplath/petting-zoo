@@ -13,10 +13,14 @@ class Horse:
         self.shift = shift
         self.food = food
 
+    def __str__(self):
+        return f"{self.name} is a/n {self.species}"
+
     def feed(self):
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
     
 fusaichi_pegasus = Horse("Fusaichi Pegasus","American Thoroughbred horse", "morning", "timothy and oat hay")
+print(fusaichi_pegasus)
 print(f'{fusaichi_pegasus.name} the {fusaichi_pegasus.species} is available to pet during the {fusaichi_pegasus.shift} shift.')
 print(fusaichi_pegasus.feed())

@@ -13,10 +13,14 @@ class Axolotl:
         self.shift = shift
         self.food = food
 
+    def __str__(self):
+        return f"{self.name} is a/n {self.species}"
+
     def feed(self):
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
 marisol = Axolotl("Marisol","Mosaic axolotl", "morning", "nightcrawlers")
-print(f'{marisol.name} the {marisol.species} is available to pet during the {marisol.shift} shift.')
+print(marisol)
+print(f'{marisol.name} the {marisol.species} is available to view during the {marisol.shift} shift.')
 print(marisol.feed())

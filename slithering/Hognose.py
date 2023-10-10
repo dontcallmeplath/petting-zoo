@@ -13,10 +13,14 @@ class Hognose:
         self.shift = shift
         self.food = food
 
+    def __str__(self):
+        return f"{self.name} is a/n {self.species}"
+
     def feed(self):
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
 baby_cakes = Hognose("Baby Cakes", "Southern Hognose snake", "midday", "a feeder mouse")
+print(baby_cakes)
 print(f'{baby_cakes.name} the {baby_cakes.species} is available to pet during the {baby_cakes.shift} shift.')
 print(baby_cakes.feed())

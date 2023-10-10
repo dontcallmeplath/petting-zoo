@@ -13,10 +13,14 @@ class Snork:
         self.shift = shift
         self.food = food
 
+    def __str__(self):
+        return f"{self.name} is a/n {self.species}"
+
     def feed(self):
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
 squish_pls = Snork("Squish", "Ball python", "afternoon", "a rodent")
+print(squish_pls)
 print(f'{squish_pls.name} the {squish_pls.species} is available to pet during the {squish_pls.shift} shift.')
 print(squish_pls.feed())

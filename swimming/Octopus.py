@@ -13,10 +13,14 @@ class Octopus:
         self.shift = shift
         self.food = food
 
+    def __str__(self):
+        return f"{self.name} is a/n {self.species}"
+
     def feed(self):
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
 ronald = Octopus("Ronald","Umbrella octopus", "afternoon", "frozen razor shell clams")
+print(ronald)
 print(f'{ronald.name} the {ronald.species} is available to pet during the {ronald.shift} shift.')
 print(ronald.feed())

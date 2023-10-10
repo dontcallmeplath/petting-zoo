@@ -12,11 +12,15 @@ class Gecko:
         self.slithering = True
         self.shift = shift
         self.food = food
-        
+
+    def __str__(self):
+        return f"{self.name} is a/n {self.species}"
+
     def feed(self):
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
 
 martin = Gecko("Martin", "Crested gecko", "morning", "crickets")
+print(martin)
 print(f'{martin.name} the {martin.species} is available to pet during the {martin.shift} shift.')
 print(martin.feed())
