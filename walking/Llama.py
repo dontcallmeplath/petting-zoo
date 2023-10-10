@@ -2,14 +2,15 @@
 from datetime import date
 class Llama:
     """Class representing an animal"""
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
-miss_fuzz = Llama("Miss Fuzz","domestic llama")
+        self.shift = shift
+miss_fuzz = Llama("Miss Fuzz","domestic llama", "midday")
 # attr = vars(miss_fuzz)
 # print(attr)
-print(miss_fuzz)
+print(f'{miss_fuzz.name} the {miss_fuzz.species} is available to pet during the {miss_fuzz.shift} shift.')
