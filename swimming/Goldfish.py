@@ -20,7 +20,3 @@ class Goldfish:
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
-goldilocks = Goldfish("Goldilocks","Ryukin goldfish", "midday", "thawed blood worms")
-print(goldilocks)
-print(f'{goldilocks.name} the {goldilocks.species} is available to pet during the {goldilocks.shift} shift.')
-print(goldilocks.feed())

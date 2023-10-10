@@ -19,9 +19,3 @@ class Llama:
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
-miss_fuzz = Llama("Miss Fuzz","domestic llama", "midday", "clover and blackberries")
-# attr = vars(miss_fuzz)
-# print(attr)
-print(miss_fuzz)
-print(f'{miss_fuzz.name} the {miss_fuzz.species} is available to pet during the {miss_fuzz.shift} shift.')
-print(miss_fuzz.feed())

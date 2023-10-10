@@ -20,7 +20,3 @@ class Shark:
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
-bruce = Shark("Bruce", "Lemon shark", "morning", "crabs and lobster")
-print(bruce)
-print(f'{bruce.name} the {bruce.species} is available to pet during the {bruce.shift} shift.')
-print(bruce.feed())

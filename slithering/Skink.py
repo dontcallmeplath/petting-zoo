@@ -20,7 +20,3 @@ class Skink:
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
-stink = Skink("Stink", "Blue-tongued skink", "morning", "leafy greens")
-print(stink)
-print(f'{stink.name} the {stink.species} is available to pet during the {stink.shift} shift.')
-print(stink.feed())

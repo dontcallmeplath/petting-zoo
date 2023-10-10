@@ -20,7 +20,3 @@ class Catfish:
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
-icky_thump = Catfish("Icky Thump", "Armored catfish", "midday", "zucchini and squash")
-print(icky_thump)
-print(f'{icky_thump.name} the {icky_thump.species} is available to pet during the {icky_thump.shift} shift.')
-print(icky_thump.feed())

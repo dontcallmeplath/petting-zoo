@@ -20,7 +20,3 @@ class Goose:
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
         
-sir_honk = Goose("Sir Honk", "common goose", "afternoon", "orchard and timothy hay")
-print(sir_honk)
-print(f'{sir_honk.name} the {sir_honk.species} is available to pet during the {sir_honk.shift} shift.')
-print(sir_honk.feed())

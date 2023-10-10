@@ -20,7 +20,3 @@ class Alligator:
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
 
-alfred = Alligator("Alfred", "American alligator", "afternoon", "fish")
-print(alfred)
-print(f'{alfred.name} the {alfred.species} is available to pet during the {alfred.shift} shift.')
-print(alfred.feed())

@@ -19,8 +19,4 @@ class Donkey:
     def feed(self):
         """Method to allow for the feeding of animals"""
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
-        
-arsenio = Donkey("Arsenio","regular ol' donkey", "morning", "straw")
-print(arsenio)
-print(f'{arsenio.name} the {arsenio.species} is available to pet during the {arsenio.shift} shift.')
-print(arsenio.feed())
+    
