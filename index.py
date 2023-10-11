@@ -5,7 +5,6 @@ from swimming import Axolotl, Catfish, Goldfish, Octopus, Shark
 from walking import Cougar, Donkey, Goose, Horse, Llama
 
 alfred = Alligator("Alfred", "American alligator", "afternoon", "fish", 123456)
-
 print(alfred)
 print(f'{alfred.name} the {alfred.species} is available to pet during the {alfred.shift} shift.')
 print(alfred.feed())
@@ -112,3 +111,6 @@ print(f"{atchafalaya_swamp.attraction_name} is where you'll find {atchafalaya_sw
 for animal in atchafalaya_swamp.animals:
     print(f'- {animal.name} the {animal.species} - {animal.chip_number}')
 
+print(fluffy_funhouse.last_critter_added)
+print(viper_village.last_critter_added)
+print(atchafalaya_swamp.last_critter_added)
