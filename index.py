@@ -1,5 +1,5 @@
 '''Module serving as Index'''
-from attractions import Attraction, PettingZoo
+from attractions import Attraction, PettingZoo, SnakePit, WetLands
 from slithering import Alligator, Gecko, Hognose, Skink, Snork
 from swimming import Axolotl, Catfish, Goldfish, Octopus, Shark
 from walking import Cougar, Donkey, Goose, Horse, Llama
@@ -82,13 +82,31 @@ print(f'{miss_fuzz.name} the {miss_fuzz.species} is available to pet during the 
 print(miss_fuzz.feed())
 
 fluffy_funhouse = PettingZoo("Fluffy Funhouse")
-fluffy_funhouse.animals.append(madam_milf)
-fluffy_funhouse.animals.append(arsenio)
-fluffy_funhouse.animals.append(sir_honk)
-fluffy_funhouse.animals.append(fusaichi_pegasus)
-fluffy_funhouse.animals.append(miss_fuzz)
+fluffy_funhouse.add_animal(madam_milf)
+fluffy_funhouse.add_animal(arsenio)
+fluffy_funhouse.add_animal(sir_honk)
+fluffy_funhouse.add_animal(fusaichi_pegasus)
+fluffy_funhouse.add_animal(miss_fuzz)
 print(f"{fluffy_funhouse.attraction_name} is where you'll find the {fluffy_funhouse.description} animals:")
 for animal in fluffy_funhouse.animals:
-    print(f'{animal.name}')
+    print(f'- {animal.name} the {animal.species}')
 
-    
+viper_village = SnakePit("Viper Village")
+viper_village.add_animal(alfred)
+viper_village.add_animal(martin)
+viper_village.add_animal(baby_cakes)
+viper_village.add_animal(stink)
+viper_village.add_animal(squish_pls)
+print(f"{viper_village.attraction_name} is where {viper_village.description} live:")
+for animal in viper_village.animals:
+    print(f'- {animal.name} the {animal.species}')
+
+atchafalaya_swamp = WetLands("Atchafalaya Swamp")
+atchafalaya_swamp.add_animal(marisol)
+atchafalaya_swamp.add_animal(icky_thump)
+atchafalaya_swamp.add_animal(goldilocks)
+atchafalaya_swamp.add_animal(ronald)
+atchafalaya_swamp.add_animal(bruce)
+print(f"{atchafalaya_swamp.attraction_name} is where you'll find {atchafalaya_swamp.description} animals:")
+for animal in atchafalaya_swamp.animals:
+    print(f'- {animal.name} the {animal.species}')

@@ -9,4 +9,3 @@ class PettingZoo:
     def add_animal(self, animal):
         """Method for adding animals to exhibits"""
         return self.animals.append(animal)
-
