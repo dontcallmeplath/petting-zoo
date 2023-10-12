@@ -1,6 +1,7 @@
 '''Module serving as Index'''
 from attractions import Attraction, PettingZoo, SnakePit, WetLands
 from animals import Alligator, Gecko, Hognose, Skink, Snork, Axolotl, Catfish, Goldfish, Octopus, Shark, Cougar, Donkey, Goose, Horse, Llama
+from movements import slithering, swimming, walking
 
 alfred = Alligator("Alfred", "American alligator", "fish", 123456)
 print(alfred)
@@ -66,6 +67,8 @@ sir_honk = Goose("Sir Honk", "common goose", "afternoon", "orchard and timothy h
 print(sir_honk)
 print(f'{sir_honk.name} the {sir_honk.species} is available to pet during the {sir_honk.shift} shift.')
 print(sir_honk.feed())
+sir_honk.run()
+sir_honk.swim()
 
 fusaichi_pegasus = Horse("Fusaichi Pegasus","American Thoroughbred horse", "morning", "timothy and oat hay", 456781)
 print(fusaichi_pegasus)
