@@ -1,3 +1,4 @@
+from animals import Animal
 from .Axolotl import Axolotl
 from .Catfish import Catfish
 from .Goldfish import Goldfish
