@@ -113,5 +113,8 @@ for animal in atchafalaya_swamp.animals:
     print(f'- {animal.name} the {animal.species} - {animal.chip_number}')
 
 print(fluffy_funhouse.last_critter_added)
+fluffy_funhouse.add_animal_pythonic(madam_milf)
+fluffy_funhouse.add_animal_type_check(madam_milf)
+fluffy_funhouse.add_animal_pythonic(alfred)
 print(viper_village.last_critter_added)
 print(atchafalaya_swamp.last_critter_added)
