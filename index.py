@@ -1,9 +1,6 @@
 '''Module serving as Index'''
 from attractions import Attraction, PettingZoo, SnakePit, WetLands
-from animals import Animal
-from slithering import Alligator, Gecko, Hognose, Skink, Snork
-from swimming import Axolotl, Catfish, Goldfish, Octopus, Shark
-from walking import Cougar, Donkey, Goose, Horse, Llama
+from animals import Alligator, Gecko, Hognose, Skink, Snork, Axolotl, Catfish, Goldfish, Octopus, Shark, Cougar, Donkey, Goose, Horse, Llama
 
 alfred = Alligator("Alfred", "American alligator", "fish", 123456)
 print(alfred)
