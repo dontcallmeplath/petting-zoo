@@ -1,10 +1,10 @@
 """Module to create instance of attraction re wetlands"""
-class WetLands:
+from .attraction import Attraction
+
+class WetLands(Attraction):
     """Class creating instances of wetlands"""
-    def __init__(self, name):
-        self.attraction_name = name
-        self.description = "boggy, cute, and mysterious"
-        self.animals = list()
+    def __init__(self, name, description):
+        super().__init__(name, description)
 
     def add_animal(self, animal):
         """Method for adding animals to exhibits"""

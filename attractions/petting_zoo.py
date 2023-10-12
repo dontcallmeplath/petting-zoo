@@ -1,11 +1,11 @@
 """Module to create instance of attraction re petting zoo"""
-class PettingZoo:
+from .attraction import Attraction
+
+class PettingZoo(Attraction):
     """Class creating instances of petting zoos"""
-    def __init__(self, name):
-        self.attraction_name = name
-        self.description = "cute, fuzzy, and cuddly"
-        self.animals = list()
-        
+    def __init__(self, name, description):
+        super().__init__(name, description)
+                
     def add_animal(self, animal):
         """Method for adding animals to exhibits"""
         return self.animals.append(animal)

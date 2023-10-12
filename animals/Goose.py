@@ -11,10 +11,13 @@ class Goose(Animal, Walking, Swimming):
         self.walking = True
         self.date_added = date.today()
 
-    def honK(self):
+    def honk(self):
         """Method to print sound animal makes"""
         print("The goose honks. A lot.")
 
+    def run(self):
+        print(f'{self} waddles')
+
     def __str__(self):
-        return f'{self.name} the Goose'        
+        return f'{self.name} the Goose'
         
